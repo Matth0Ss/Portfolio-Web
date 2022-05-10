@@ -1,0 +1,139 @@
+body{
+    padding: 50px;
+    background-image:url(10b50d44235a56ac279f8ce82cfa7e4f.jpg) ;
+    background-size:cover;
+  }
+  
+  
+  /*Ajouter ci-dessous les règles pour le header */
+  
+  header{
+      background-color:rgba(30, 163, 216, 0.795);
+      padding: 10px;
+  }
+  
+  /*Ajouter ci-dessous les règles pour la section */
+  
+  section{
+    background-color:rgba(30, 163, 216, 0.795);
+  padding: 10px;
+  }
+  
+  /*Ajouter ci-dessous les règles pour le premier aside */
+  aside:first-of-type{
+    background-color:rgba(30, 163, 216, 0.795);
+    padding: 10px;
+  }
+  
+  /*Ajouter ci-dessous les règles pour le deuxième aside */
+  aside{
+    
+    background-color:rgba(30, 163, 216, 0.795);
+    padding: 10px;
+  }
+  
+  /*Ajouter ci-dessous les règles pour le footer */
+  
+  footer{
+    background-color:rgba(30, 163, 216, 0.795);
+  
+    padding: 10px;
+  }
+  
+  
+  
+  
+  tr:first-of-type{
+    background-color: green;
+  }
+  th,td{
+  border: 1px solid black;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-color: yellow;
+  }
+  table{
+    border-collapse: collapse;
+    width: 300px;
+    margin-bottom: 20px;
+  }
+  img:hover {
+    opacity: 1;
+  }
+  
+  a:first-of-type:hover{
+     color: brown;
+     }
+  li:first-of-type{
+    
+    list-style-type: none;
+  }
+
+
+
+
+  nav {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  nav img {
+    width: 159px;
+    height: 57px;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  
+  nav ul {
+    display:flex;
+    justify-content: space-between;
+    list-style-type: none;
+    flex-basis: 40%;
+    padding-left: 0;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 20px;
+  }
+  nav a:hover {
+    background-color: rgb(0, 0, 0);
+    transition: all ease 0.5s;
+  }
+
+
+img{
+   height: 175px;
+   width: 150px;
+}
+
+
+
+  div {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  div > * {
+    flex: 1 100%;
+  }
+  header, footer, div > * {
+    border: 1px solid rgb(5, 50, 134);
+  }
+  
+  @media all and (min-width: 800px) {
+    section { flex: 3 0px; }
+    section+aside { order: 1; }
+    section { order: 2; }
+    aside+aside { order: 3; }
+  }
+  
+  @media all and (min-width: 600px) {
+    section+aside { flex: 1 auto; }
+    aside+aside { flex: 1 auto; }
+  }
+  
